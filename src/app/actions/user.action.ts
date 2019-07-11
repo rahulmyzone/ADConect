@@ -9,6 +9,7 @@ export enum EUserActions {
 
 export class GetUsers implements Action {
     public readonly type = EUserActions.GetUsers;
+    constructor(public paylaod: IUser[]) {}
 }
 
 export class GetUsersSuccess implements Action {
@@ -18,6 +19,7 @@ export class GetUsersSuccess implements Action {
 
 export class GetUser implements Action {
     public readonly type = EUserActions.GetUser;
+    constructor(public payload: IUser) {}
 }
 
 export class GetUserSuccess implements Action {
